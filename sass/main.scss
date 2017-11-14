@@ -28,7 +28,7 @@ a{
   text-decoration: none;
 }
 ul{
-  list-style-type: none;
+  list-style-type: none;.item
 }
 .btn-summary,
 .btn-form{
@@ -226,9 +226,10 @@ ul{
         flex-wrap:wrap;
         justify-content: space-between;
         .item{
-            width: 100%;
+            width: 90%;
             position: relative;
             height: 300px;
+            margin: 10px auto;
             img{
                 height: 100%;
             }

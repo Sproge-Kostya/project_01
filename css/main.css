@@ -216,12 +216,12 @@ ul {
 
 .slider .item {
   position: relative;
-  height: 100vh;
+  height: 400px;
   background-color: #ccc;
 }
 
 .slider .item img {
-  width: 100%;
+  height:100%;
 }
 
 .slider .item .slide-description {
@@ -263,30 +263,42 @@ ul {
 }
 
 .offers .vacancies .item {
-  width: 100%;
+  width: 90%;
   position: relative;
   height: 300px;
-}
-
-.offers .vacancies .item img {
-  height: 100%;
+  margin: 10px auto;
+  border: 1px;
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
 }
 
 .offers .vacancies .item .content {
   position: absolute;
-  top: 40%;
-  left: 70%;
-  width: 40%;
-  transform: translate(-50%, -50%);
+  bottom: 10%;
+/*  transform: translate(0, -50%);*/
   color: #000;
+  text-align: left;
+  padding: 10px;
+  color: #fff;
+}
+.offers .vacancies .item .overley{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(36,36,36,.8);
+  transition: all 1.4s ease-out;
+}
+.offers .vacancies .item .overley:hover .content{
+  bottom: 0;
+  transition: all 1.4s ease-out;
 }
 
 .offers .vacancies .item .content .title-item {
-  font: 400 21px/1 "SF";
+  font: 400 27px/1 "SF";
+  margin-bottom: 14px;
 }
 
 .offers .vacancies .item .content .description-item {
-  font: 400 21px/1 "SF";
+  font: 400 19px/1 "SF";
 }
 
 @media (min-width: 768px) {
@@ -327,6 +339,7 @@ ul {
 .conditions .conditions-list .inform .item {
   width: 100%;
   text-align: center;
+  padding: 15px 0;
 }
 
 .conditions .conditions-list .inform .btn-summary {
@@ -407,7 +420,7 @@ ul {
 }
 
 footer {
-  height: 30px;
+  height: 40px;
   text-align: center;
   background-color: #242f3e;
   color: #d39363;
@@ -415,7 +428,7 @@ footer {
 }
 
 footer .copyrighted {
-  font: 400 14px/2.5 'SF';
+  font: 400 14px/2.85 'SF';
   height: 100%;
   padding: 0 20px;
 }

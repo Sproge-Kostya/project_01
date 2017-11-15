@@ -1,15 +1,19 @@
 {
-  "name": "test",
+  "name": "progect_01",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Sproge-Kostya",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sproge-Kostya/project_01.git"
   }
 }

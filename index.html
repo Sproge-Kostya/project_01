@@ -24,44 +24,60 @@
 <nav class="navbar">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+    </div>
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <a href="#" class="logo">
-            <img src="images/logo.png" alt="">
-        </a>
-    </div>
-
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active">
-            <a href="#">Вакансии</a>
-        </li>
-        <li>
-            <a href="#">Процесс офрмления</a>
-        </li>
-        <li>
-            <a href="#">Отзывы</a>
-        </li>
-        <li>
-            <a href="#">Контакты</a>
-        </li>
-        <li>
-            <a href="tel:0505875379">0505875379</a>
-        </li>
-    </ul>
-    </div><!-- /.navbar-collapse -->
+    <div class="nav-collapse">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#">Вакансии</a>
+                </li>
+                <li>
+                    <a href="#">Процесс офрмления</a>
+                </li>
+                <li>
+                    <a href="#">Отзывы</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+        <button class="callback" data-toggle="modal" data-target=".call-back">Перезвоните</button>
+    </div>
 </nav>
+
+<div class="modal fade call-back" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="form">
+            <h3 class="title-form">ЗАПОЛНИТЕ ЗАЯВКУ СЕЙЧАС</h3>
+            <p class="description-form">для консультации по трудоустройству в ОАЭ</p>
+            <form action="">
+                <input type="text" value="Введите имя">
+                <input type="text" value="Введите e-mail">
+                <input type="text" value="Введите телефон">
+                <input type="submit" class="btn-form">
+            </form>
+        </div>
+    </div>
+  </div>
+</div>
 
 <div class="main">
     <div class="slid slider">
 
         <div class="item">
-            <img src="images/waiter_01.jpg" alt="">
+            <img src="images/waiter_04.jpg" alt="">
             <div class="slide-description">
                 <h1 class="title">Легальная работа официантом в в Объединенных Арабских Эмиратах</h1>
                 <h2 class="subtitle">Стоимость программы от 550$</h2>
@@ -97,7 +113,7 @@
 
         <div class="vacancies">
 
-            <div class="item" style="background: url(images/waiter_01.jpg);">
+            <div class="item" style="background: url(images/waiter_03.jpg);">
                 <div class="overley">
                     <div class="content">
                         <h3 class="title-item">Катар и Бахрейн</h3>
@@ -105,6 +121,7 @@
                         Стоимость программы всего 550$<br> Заработная плата от 600% + чаевые<br> Цены ниже, чем в ОАЭ
                         </p>
                     </div>
+                    <button class="callback" data-toggle="modal" data-target=".call-back">Перезвоните</button>
                 </div>
             </div>
 
@@ -112,8 +129,9 @@
                 <div class="overley">
                     <div class="content">
                         <h3 class="title-item">Дубай</h3>
-                        <p class="description-item">Стоимость программы всего 730$ Заработная плата от 700$ + большие чаевые<br> Можно без опыта.<br> Наша компания занимается подготовкой</p>
+                        <p class="description-item">Стоимость программы всего 730$<br>Заработная плата от 700$ + большие чаевые<br> Можно без опыта.<br> Наша компания занимается подготовкой</p>
                     </div>
+                    <button class="callback" data-toggle="modal" data-target=".call-back">Перезвоните</button>
                 </div>
             </div>
 
@@ -150,17 +168,17 @@
 
     <div class="reviews">
         <h2 class="title">Что говорят о работе в ОАЭ участники программы?</h2>
-        <!-- <div class="slider-reviews slider">
+        <div class="video-reviews">
             <div class="item">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MCt2I3wN9PE" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/MCt2I3wN9PE" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="item">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MCt2I3wN9PE" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/MCt2I3wN9PE" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="item">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MCt2I3wN9PE" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/MCt2I3wN9PE" frameborder="0" allowfullscreen></iframe>
             </div>
-        </div> -->
+        </div>
     </div>
 
     <div class="contacts">
